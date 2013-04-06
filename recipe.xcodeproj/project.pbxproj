@@ -16,6 +16,11 @@
 		FA97F78A171007D8002BD82A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F789171007D8002BD82A /* Default.png */; };
 		FA97F78C171007D8002BD82A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F78B171007D8002BD82A /* Default@2x.png */; };
 		FA97F78E171007D8002BD82A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F78D171007D8002BD82A /* Default-568h@2x.png */; };
+		FA97F79617100D52002BD82A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97F79517100D52002BD82A /* MainViewController.m */; };
+		FA97F799171021C1002BD82A /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97F798171021C1002BD82A /* RecipeTableViewController.m */; };
+		FA97F79C171029F5002BD82A /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97F79B171029F5002BD82A /* Recipe.m */; };
+		FA97F79E17102EEB002BD82A /* Recipe.json in Resources */ = {isa = PBXBuildFile; fileRef = FA97F79D17102EEB002BD82A /* Recipe.json */; };
+		FA97F7A2171033A7002BD82A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97F7A1171033A7002BD82A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,15 @@
 		FA97F789171007D8002BD82A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA97F78B171007D8002BD82A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA97F78D171007D8002BD82A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA97F79417100D52002BD82A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FA97F79517100D52002BD82A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FA97F797171021C1002BD82A /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
+		FA97F798171021C1002BD82A /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
+		FA97F79A171029F5002BD82A /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		FA97F79B171029F5002BD82A /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		FA97F79D17102EEB002BD82A /* Recipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipe.json; sourceTree = "<group>"; };
+		FA97F7A0171033A7002BD82A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		FA97F7A1171033A7002BD82A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +92,16 @@
 		FA97F77D171007D8002BD82A /* recipe */ = {
 			isa = PBXGroup;
 			children = (
+				FA97F79F171033A7002BD82A /* JSONKit */,
 				FA97F786171007D8002BD82A /* AppDelegate.h */,
 				FA97F787171007D8002BD82A /* AppDelegate.m */,
+				FA97F797171021C1002BD82A /* RecipeTableViewController.h */,
+				FA97F798171021C1002BD82A /* RecipeTableViewController.m */,
+				FA97F79D17102EEB002BD82A /* Recipe.json */,
+				FA97F79A171029F5002BD82A /* Recipe.h */,
+				FA97F79B171029F5002BD82A /* Recipe.m */,
+				FA97F79417100D52002BD82A /* MainViewController.h */,
+				FA97F79517100D52002BD82A /* MainViewController.m */,
 				FA97F77E171007D8002BD82A /* Supporting Files */,
 			);
 			path = recipe;
@@ -97,6 +119,15 @@
 				FA97F78D171007D8002BD82A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA97F79F171033A7002BD82A /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA97F7A0171033A7002BD82A /* JSONKit.h */,
+				FA97F7A1171033A7002BD82A /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +185,7 @@
 				FA97F78A171007D8002BD82A /* Default.png in Resources */,
 				FA97F78C171007D8002BD82A /* Default@2x.png in Resources */,
 				FA97F78E171007D8002BD82A /* Default-568h@2x.png in Resources */,
+				FA97F79E17102EEB002BD82A /* Recipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +198,10 @@
 			files = (
 				FA97F784171007D8002BD82A /* main.m in Sources */,
 				FA97F788171007D8002BD82A /* AppDelegate.m in Sources */,
+				FA97F79617100D52002BD82A /* MainViewController.m in Sources */,
+				FA97F799171021C1002BD82A /* RecipeTableViewController.m in Sources */,
+				FA97F79C171029F5002BD82A /* Recipe.m in Sources */,
+				FA97F7A2171033A7002BD82A /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +318,7 @@
 				FA97F793171007D8002BD82A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
