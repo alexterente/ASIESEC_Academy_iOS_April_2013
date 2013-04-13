@@ -1,14 +1,22 @@
 [
  {
  "Name":"lasania",
- "Description":"cum se face lsasania"
+ "Description":"cum se face lsasania",
+ "PhotoName":"lasania.jpg"
  },
  {
  "Name":"pizza",
- "Description":"cum se face pizza"
+ "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ipsum ut orci fringilla aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut viverra sapien. Proin ornare mi et enim feugiat interdum. Suspendisse a ligula interdum urna varius lobortis. Aenean mauris nibh, tristique eu condimentum in, pretium ac nulla. Praesent pharetra interdum lobortis. Sed faucibus porta felis, sed blandit leo elementum id. Suspendisse mattis, est vel commodo viverra, arcu tortor malesuada nisl, a hendrerit nisi velit in nunc.",
+ "PhotoName":"pizza.jpg"
  },
  {
  "Name":"sarmale",
- "Description":"intreab-o pe bunica"
+ "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ipsum ut orci fringilla aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut viverra sapien. Proin ornare mi et enim feugiat interdum. Suspendisse a ligula interdum urna varius lobortis. Aenean mauris nibh, tristique eu condimentum in, pretium ac nulla. Praesent pharetra interdum lobortis. Sed faucibus porta felis, sed blandit leo elementum id. Suspendisse mattis, est vel commodo viverra, arcu tortor malesuada nisl, a hendrerit nisi velit in nunc.",
+ "PhotoName":"sarmale.png"
+ },
+ {
+ "Name":"gulas",
+ "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ipsum ut orci fringilla aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut viverra sapien. Proin ornare mi et enim feugiat interdum. Suspendisse a ligula interdum urna varius lobortis. Aenean mauris nibh, tristique eu condimentum in, pretium ac nulla. Praesent pharetra interdum lobortis. Sed faucibus porta felis, sed blandit leo elementum id. Suspendisse mattis, est vel commodo viverra, arcu tortor malesuada nisl, a hendrerit nisi velit in nunc.",
+ "PhotoName":"gulas.jpg"
  }
  ]

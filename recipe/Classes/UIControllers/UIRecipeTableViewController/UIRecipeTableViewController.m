@@ -2,13 +2,15 @@
 //  RecipeTableViewController.m
 //  recipe
 //
-//  Created by Alex on 4/6/13.
-//  Copyright (c) 2013 Alex. All rights reserved.
+//  Created by Alex Terente on 4/6/13.
+//  Copyright (c) 2013 TAGonSoft. All rights reserved.
 //
 
 #import "UIRecipeTableViewController.h"
 #import "ACRecipe.h"
 #import "JSONKit.h"
+
+#define kDetailedLabelFont [UIFont systemFontOfSize:12]
 
 @implementation UIRecipeTableViewController
 
@@ -21,14 +23,17 @@
     return self;
 }
 
-- (NSArray *)recipeFromArry:(NSArray *)jsonArray{
+- (NSArray *)recipeFromArray:(NSArray *)jsonArray{
     NSMutableArray *returnRecipeArray = [[NSMutableArray alloc] initWithCapacity:[jsonArray count]];
     for (NSDictionary *currentDictionary in jsonArray) {
-        ACRecipe *newRecipe = [[ACRecipe alloc] initWithName:currentDictionary[@"Name"]
-                                          andDescription:currentDictionary[@"Description"]];
+        ACRecipe *newRecipe = [[ACRecipe alloc]
+                               initWithName:currentDictionary[@"Name"]
+                               description:currentDictionary[@"Description"]
+                               andPhotoName:currentDictionary[@"PhotoName"]];
+        
         [returnRecipeArray addObject:newRecipe];
     }
-    return [returnRecipeArray copy];
+    return [NSArray arrayWithArray:returnRecipeArray];
 }
 
 - (void)loadJson{
@@ -36,6 +41,9 @@
     NSString *jsonString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     NSLog(@"JsonString:%@",jsonString);
     NSArray *recipeDictionaryArray = [jsonString objectFromJSONString];
+    [dataSourceArray removeAllObjects];
+    [dataSourceArray addObjectsFromArray:[self recipeFromArray:recipeDictionaryArray]];
+    
 }
 
 - (void)viewDidLoad
@@ -47,12 +55,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-
+    self.navigationItem.title = NSLocalizedString(@"kRecipeTitle", @"");
     dataSourceArray = [[NSMutableArray alloc] initWithCapacity:0];
-    
-    ACRecipe *newRecipe = [[ACRecipe alloc] initWithName:@"Lasania" andDescription:@"Description"];
-    [dataSourceArray addObject:newRecipe];
-    
+
     [self loadJson];
 }
 
@@ -68,7 +73,7 @@
 {
 
     // Return the number of sections.
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -78,22 +83,37 @@
     return [dataSourceArray count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ACRecipe *curentRecipe = [dataSourceArray objectAtIndex:indexPath.row];
+    CGSize constraindSize = CGSizeMake(280, 9999);
+    CGSize descriptionSize = [curentRecipe.description sizeWithFont:kDetailedLabelFont
+                                                   constrainedToSize:constraindSize
+                                                      lineBreakMode:NSLineBreakByTruncatingTail];
+    
+    //return 30+descriptionSize.height;
+    return 60;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
     ACRecipe *currentRecipe = [dataSourceArray objectAtIndex:indexPath.row];
     cell.textLabel.text = currentRecipe.name;
+    cell.detailTextLabel.text = currentRecipe.description;
+    cell.detailTextLabel.numberOfLines = 2;
+    cell.imageView.image = [UIImage imageNamed:currentRecipe.photoName];
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return [NSString stringWithFormat:@"Current section:%d",section];
+    return NSLocalizedString(@"kOldRecipes", @"");
 }
 
 /*

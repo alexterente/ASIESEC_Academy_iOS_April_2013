@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  recipe
 //
-//  Created by Alex on 4/6/13.
-//  Copyright (c) 2013 Alex. All rights reserved.
+//  Created by Alex Terente on 4/6/13.
+//  Copyright (c) 2013 TAGonSoft. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -23,10 +23,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
-    self.test = @"Test";
-    
-    NSLog(@"Log:%@",_test);
-    
+
     return YES;
 }
 
@@ -56,5 +53,29 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/*
+ #pragma mark - sharedInstance
+ + (id)sharedInstance {
+ static id master = nil;
+ 
+ @synchronized (self) {
+ if (master == nil) {
+ master = [[self alloc]init];
+ }
+ }
+ return master;
+ }
+ 
+ #pragma mark - init
+ 
+ - (id)init {
+ if ([super init]) {
+ httpApiClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:kDevicesServerURL]];
+ }
+ return self;
+ }
+ */
+
 
 @end

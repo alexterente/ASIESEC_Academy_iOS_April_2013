@@ -2,8 +2,8 @@
 //  MainViewController.m
 //  recipe
 //
-//  Created by Alex on 4/6/13.
-//  Copyright (c) 2013 Alex. All rights reserved.
+//  Created by Alex Terente on 4/6/13.
+//  Copyright (c) 2013 TAGonSoft. All rights reserved.
 //
 
 #import "UIMainViewController.h"
@@ -33,7 +33,7 @@
     UIButton *button = (UIButton *) [self.view viewWithTag:1001];
     [button setTitle:@"I was pressed" forState:UIControlStateNormal];
     
-    UIRecipeTableViewController *recipeTableVC = [[UIRecipeTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    UIRecipeTableViewController *recipeTableVC = [[UIRecipeTableViewController alloc] initWithStyle:UITableViewStylePlain];
     [self.navigationController pushViewController:recipeTableVC animated:YES];
     
 }
