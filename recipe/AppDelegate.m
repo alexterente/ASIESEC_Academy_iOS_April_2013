@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "UIMainViewController.h"
+#import "UIAboutViewController.h"
+#import "UIRecipeTableViewController.h"
 
 @implementation AppDelegate
 
@@ -15,15 +16,29 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIMainViewController *mainViewController = [[UIMainViewController alloc] init];
+    UITabBarItem *reciteBarItem = [[UITabBarItem alloc]
+                                   initWithTitle:NSLocalizedString(@"kRecipes", @"")
+                                           image:[UIImage imageNamed:@"notepad.png"]
+                                             tag:1000];
+    UIRecipeTableViewController *recipeTableViewController =        [[UIRecipeTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *recipeNavigationController = [[UINavigationController alloc] initWithRootViewController:recipeTableViewController];
+    recipeNavigationController.tabBarItem = reciteBarItem;
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    UITabBarItem *aboutBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:1001];
     
-    self.window.rootViewController = navigationController;
+    UIAboutViewController *mainViewController = [[UIAboutViewController alloc] init];
+    UINavigationController *aboutNavigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    aboutNavigationController.tabBarItem = aboutBarItem;
+    
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[recipeNavigationController,aboutNavigationController];
+    
+    self.window.rootViewController = tabBarController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
 
@@ -35,7 +50,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIMainViewController : UIViewController
+@interface UIAboutViewController : UIViewController
 @property (nonatomic, strong) NSString *text;
 @end

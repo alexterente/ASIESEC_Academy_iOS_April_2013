@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 TAGonSoft. All rights reserved.
 //
 
-#import "UIMainViewController.h"
+#import "UIAboutViewController.h"
 #import "UIRecipeTableViewController.h"
 
-@implementation UIMainViewController
+@implementation UIAboutViewController
 - (void)viewDidLoad
 {
     [super viewDidLoad];

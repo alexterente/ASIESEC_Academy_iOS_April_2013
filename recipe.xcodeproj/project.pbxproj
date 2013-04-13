@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA901ADC17115A7400A69C04 /* ACRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = FA901AD017115A7400A69C04 /* ACRecipe.m */; };
 		FA901ADD17115A7400A69C04 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA901AD417115A7400A69C04 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FA901ADE17115A7400A69C04 /* UIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA901AD817115A7400A69C04 /* UIMainViewController.m */; };
 		FA901ADF17115A7400A69C04 /* UIRecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA901ADB17115A7400A69C04 /* UIRecipeTableViewController.m */; };
 		FA901AE217115B2E00A69C04 /* Recipe.json in Resources */ = {isa = PBXBuildFile; fileRef = FA901AE117115B2E00A69C04 /* Recipe.json */; };
 		FA901AE817117C5B00A69C04 /* gulas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA901AE417117C5B00A69C04 /* gulas.jpg */; };
@@ -26,6 +25,11 @@
 		FA97F78A171007D8002BD82A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F789171007D8002BD82A /* Default.png */; };
 		FA97F78C171007D8002BD82A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F78B171007D8002BD82A /* Default@2x.png */; };
 		FA97F78E171007D8002BD82A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA97F78D171007D8002BD82A /* Default-568h@2x.png */; };
+		FA9F0AE0171940CD005B43C0 /* UIAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0ADF171940CD005B43C0 /* UIAboutViewController.m */; };
+		FA9F0AE217194560005B43C0 /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F0AE117194560005B43C0 /* notepad.png */; };
+		FA9F0AE617194B4A005B43C0 /* UIDetailedRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AE517194B4A005B43C0 /* UIDetailedRecipeViewController.m */; };
+		FA9F0AEC17196BE2005B43C0 /* ACRecipeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AEB17196BE2005B43C0 /* ACRecipeManager.m */; };
+		FA9F0AEF17196EF6005B43C0 /* NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +37,6 @@
 		FA901AD017115A7400A69C04 /* ACRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ACRecipe.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		FA901AD317115A7400A69C04 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		FA901AD417115A7400A69C04 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		FA901AD717115A7400A69C04 /* UIMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMainViewController.h; sourceTree = "<group>"; };
-		FA901AD817115A7400A69C04 /* UIMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMainViewController.m; sourceTree = "<group>"; };
 		FA901ADA17115A7400A69C04 /* UIRecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRecipeTableViewController.h; sourceTree = "<group>"; };
 		FA901ADB17115A7400A69C04 /* UIRecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRecipeTableViewController.m; sourceTree = "<group>"; };
 		FA901AE117115B2E00A69C04 /* Recipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipe.json; sourceTree = "<group>"; };
@@ -57,6 +59,15 @@
 		FA97F789171007D8002BD82A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA97F78B171007D8002BD82A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA97F78D171007D8002BD82A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA9F0ADE171940CD005B43C0 /* UIAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAboutViewController.h; sourceTree = "<group>"; };
+		FA9F0ADF171940CD005B43C0 /* UIAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAboutViewController.m; sourceTree = "<group>"; };
+		FA9F0AE117194560005B43C0 /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad.png; sourceTree = "<group>"; };
+		FA9F0AE417194B4A005B43C0 /* UIDetailedRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDetailedRecipeViewController.h; sourceTree = "<group>"; };
+		FA9F0AE517194B4A005B43C0 /* UIDetailedRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDetailedRecipeViewController.m; sourceTree = "<group>"; };
+		FA9F0AEA17196BE2005B43C0 /* ACRecipeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRecipeManager.h; sourceTree = "<group>"; };
+		FA9F0AEB17196BE2005B43C0 /* ACRecipeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRecipeManager.m; sourceTree = "<group>"; };
+		FA9F0AED17196EF6005B43C0 /* NSStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtensions.h; sourceTree = "<group>"; };
+		FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +97,10 @@
 		FA901ACD17115A7400A69C04 /* ApplicationCore */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F0AE917196BBF005B43C0 /* ACRecipeManager */,
 				FA901ACE17115A7400A69C04 /* ACRecipe */,
+				FA9F0AED17196EF6005B43C0 /* NSStringExtensions.h */,
+				FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */,
 			);
 			path = ApplicationCore;
 			sourceTree = "<group>";
@@ -120,24 +134,16 @@
 		FA901AD517115A7400A69C04 /* UIControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA901AD617115A7400A69C04 /* UIMainViewController */,
+				FA9F0ADD171940CD005B43C0 /* UIAboutViewController */,
 				FA901AD917115A7400A69C04 /* UIRecipeTableViewController */,
 			);
 			path = UIControllers;
 			sourceTree = "<group>";
 		};
-		FA901AD617115A7400A69C04 /* UIMainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				FA901AD717115A7400A69C04 /* UIMainViewController.h */,
-				FA901AD817115A7400A69C04 /* UIMainViewController.m */,
-			);
-			path = UIMainViewController;
-			sourceTree = "<group>";
-		};
 		FA901AD917115A7400A69C04 /* UIRecipeTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F0AE317194B1B005B43C0 /* UIDetailedRecipeViewController */,
 				FA901ADA17115A7400A69C04 /* UIRecipeTableViewController.h */,
 				FA901ADB17115A7400A69C04 /* UIRecipeTableViewController.m */,
 			);
@@ -147,6 +153,7 @@
 		FA901AE017115B2E00A69C04 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA9F0AE117194560005B43C0 /* notepad.png */,
 				FA901AE317117C2A00A69C04 /* Images */,
 				FA901AE117115B2E00A69C04 /* Recipe.json */,
 			);
@@ -218,6 +225,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA9F0ADD171940CD005B43C0 /* UIAboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F0ADE171940CD005B43C0 /* UIAboutViewController.h */,
+				FA9F0ADF171940CD005B43C0 /* UIAboutViewController.m */,
+			);
+			path = UIAboutViewController;
+			sourceTree = "<group>";
+		};
+		FA9F0AE317194B1B005B43C0 /* UIDetailedRecipeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F0AE417194B4A005B43C0 /* UIDetailedRecipeViewController.h */,
+				FA9F0AE517194B4A005B43C0 /* UIDetailedRecipeViewController.m */,
+			);
+			path = UIDetailedRecipeViewController;
+			sourceTree = "<group>";
+		};
+		FA9F0AE917196BBF005B43C0 /* ACRecipeManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F0AEA17196BE2005B43C0 /* ACRecipeManager.h */,
+				FA9F0AEB17196BE2005B43C0 /* ACRecipeManager.m */,
+			);
+			path = ACRecipeManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,6 +314,7 @@
 				FA901AEA17117C5B00A69C04 /* pizza.jpg in Resources */,
 				FA901AEB17117C5B00A69C04 /* sarmale.png in Resources */,
 				FA901AEE1711818100A69C04 /* Localizable.strings in Resources */,
+				FA9F0AE217194560005B43C0 /* notepad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +329,11 @@
 				FA97F788171007D8002BD82A /* AppDelegate.m in Sources */,
 				FA901ADC17115A7400A69C04 /* ACRecipe.m in Sources */,
 				FA901ADD17115A7400A69C04 /* JSONKit.m in Sources */,
-				FA901ADE17115A7400A69C04 /* UIMainViewController.m in Sources */,
 				FA901ADF17115A7400A69C04 /* UIRecipeTableViewController.m in Sources */,
+				FA9F0AE0171940CD005B43C0 /* UIAboutViewController.m in Sources */,
+				FA9F0AE617194B4A005B43C0 /* UIDetailedRecipeViewController.m in Sources */,
+				FA9F0AEC17196BE2005B43C0 /* ACRecipeManager.m in Sources */,
+				FA9F0AEF17196EF6005B43C0 /* NSStringExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

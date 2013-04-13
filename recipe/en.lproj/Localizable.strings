@@ -5,5 +5,6 @@
   Created by Alex Terente on 4/7/13.
   Copyright (c) 2013 TAGonSoft. All rights reserved.
 */
+"kRecipes" = "Recipes";
 "kRecipeTitle" = "Recipe";
 "kOldRecipes" = "Old recipes";
