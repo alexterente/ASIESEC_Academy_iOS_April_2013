@@ -29,7 +29,6 @@
 		FA9F0AE217194560005B43C0 /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9F0AE117194560005B43C0 /* notepad.png */; };
 		FA9F0AE617194B4A005B43C0 /* UIDetailedRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AE517194B4A005B43C0 /* UIDetailedRecipeViewController.m */; };
 		FA9F0AEC17196BE2005B43C0 /* ACRecipeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AEB17196BE2005B43C0 /* ACRecipeManager.m */; };
-		FA9F0AEF17196EF6005B43C0 /* NSStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +65,6 @@
 		FA9F0AE517194B4A005B43C0 /* UIDetailedRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDetailedRecipeViewController.m; sourceTree = "<group>"; };
 		FA9F0AEA17196BE2005B43C0 /* ACRecipeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRecipeManager.h; sourceTree = "<group>"; };
 		FA9F0AEB17196BE2005B43C0 /* ACRecipeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRecipeManager.m; sourceTree = "<group>"; };
-		FA9F0AED17196EF6005B43C0 /* NSStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtensions.h; sourceTree = "<group>"; };
-		FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +96,6 @@
 			children = (
 				FA9F0AE917196BBF005B43C0 /* ACRecipeManager */,
 				FA901ACE17115A7400A69C04 /* ACRecipe */,
-				FA9F0AED17196EF6005B43C0 /* NSStringExtensions.h */,
-				FA9F0AEE17196EF6005B43C0 /* NSStringExtensions.m */,
 			);
 			path = ApplicationCore;
 			sourceTree = "<group>";
@@ -333,7 +328,6 @@
 				FA9F0AE0171940CD005B43C0 /* UIAboutViewController.m in Sources */,
 				FA9F0AE617194B4A005B43C0 /* UIDetailedRecipeViewController.m in Sources */,
 				FA9F0AEC17196BE2005B43C0 /* ACRecipeManager.m in Sources */,
-				FA9F0AEF17196EF6005B43C0 /* NSStringExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

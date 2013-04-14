@@ -7,7 +7,6 @@
 //
 
 #import "UIDetailedRecipeViewController.h"
-#import "NSStringExtensions.h"
 
 #define kPadding 5
 
@@ -66,13 +65,6 @@
 {
     [super viewDidLoad];
     
-    NSString *notVasile =  @"bala";
-    NSString *vasile =  @"vasile";
-    
-
-    NSLog(@"Lenght:%d",[notVasile length]);
-    
-    NSLog(@"Path:%@",[[NSBundle mainBundle] pathForResource:@"gulas" ofType:@"jpg"]);
 	// Do any additional setup after loading the view.
     scrollView = [self createScrollView];
     [self.view addSubview:scrollView];
